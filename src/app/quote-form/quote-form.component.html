@@ -1,0 +1,60 @@
+<div class="modal-dialog">
+  <div class="modal-content modal-background">
+    <div class="modal-header">
+      <h5 class="modal-title primary-text" id="exampleModalLabel">
+        Modal title
+      </h5>
+      <button
+        type="button"
+        class="close primary-text"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="quoteName" class="primary-text form-lable"
+            >Quote Name</label
+          >
+          <input
+            type="text"
+            name="quoteName"
+            id="quoteName"
+            class="form-control form-control-sm form-input"
+            placeholder="Enter the name of the quote"
+            aria-describedby="helpId"
+          />
+          <small id="helpId" class="text-muted">Help text</small>
+        </div>
+        <div class="form-group">
+          <label for="quoteName" class="primary-text form-lable"
+            >Quote Description</label
+          >
+          <textarea
+            type="text"
+            name="quoteName"
+            id="quoteName"
+            rows="6"
+            class="form-control form-control-sm form-input"
+            placeholder="Enter the name of the quote"
+            aria-describedby="helpId"
+          ></textarea>
+          <small id="helpId" class="text-muted">Help text</small>
+        </div>
+        <button
+          type="button"
+          class="btn mx-2 secondary-button"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn mx-2 primary-button">
+          Save changes
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

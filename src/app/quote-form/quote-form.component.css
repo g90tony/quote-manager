@@ -1,0 +1,15 @@
+.modal-background {
+  background-color: #000;
+}
+
+.form-lable {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-input {
+  background-color: transparent;
+  border: 1px #e31e27 solid;
+  border-radius: 10px;
+  color: #e31e27;
+}
