@@ -1,0 +1,36 @@
+.grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.votes-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.quote-card {
+  width: 350px;
+  background-color: #000;
+  color: #f7f7f7;
+  border-radius: 15px;
+}
+
+.quote-title {
+  font-weight: 700;
+  color: #e31e27;
+}
+
+.quote-description {
+  height: 75px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  font-size: 15px;
+  padding: 5px 20px;
+  text-align: start;
+}
+
+.quote-button {
+  font-size: 13px;
+}
