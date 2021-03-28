@@ -1,0 +1,26 @@
+nav {
+  background-color: #e31e27;
+}
+
+.nav-texts {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.nav-texts:hover {
+  text-decoration: none;
+  color: #b6131b;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: #1f0203;
+
+  transition-duration: 1.3s;
+  border-radius: 10px;
+}
