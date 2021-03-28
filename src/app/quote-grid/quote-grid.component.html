@@ -1,15 +1,21 @@
 <div class="grid-container">
   <div
     class="card quote-card shadow shadow-light m-2 border-0"
-    *ngFor="let quote of quotes"
+    *ngFor="let quote of quotes; let i = index"
   >
     <div class="card-body">
       <h4 class="card-title quote-title">{{ quote.title }}</h4>
       <p class="card-text quote-description">{{ quote.description }}</p>
       <div class="votes-row">
-        <button class="btn btn-sm quote-button primary-button mx-2">
+        <button
+          class="btn btn-sm quote-button primary-button mx-2"
+          (click)="addUpVote(i)"
+        >
           Vote Up ({{ quote.upVotes }})</button
-        ><button class="btn btn-sm quote-button secondary-button mx-2">
+        ><button
+          class="btn btn-sm quote-button secondary-button mx-2"
+          (click)="addDownVote(i)"
+        >
           Vote Down ({{ quote.downVotes }})
         </button>
       </div>

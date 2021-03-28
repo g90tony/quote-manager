@@ -9,6 +9,14 @@ import { Quote } from '../quote';
 export class QuoteGridComponent implements OnInit {
   constructor() {}
 
+  addUpVote(index: number) {
+    this.quotes[index].upVotes += 1;
+  }
+
+  addDownVote(index: number) {
+    this.quotes[index].downVotes += 1;
+  }
+
   quotes: Quote[] = [
     {
       id: 1,

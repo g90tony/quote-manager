@@ -1,8 +1,8 @@
 export class Quote {
-  id!: Number;
+  id!: number;
   title!: string;
   description!: string;
   createdON!: string;
-  upVotes!: Number;
-  downVotes!: Number;
+  upVotes!: number;
+  downVotes!: number;
 }
