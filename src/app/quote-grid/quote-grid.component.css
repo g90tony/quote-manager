@@ -4,6 +4,25 @@
   justify-content: center;
 }
 
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.trash-button {
+  width: 50px;
+  margin: 0;
+  background-color: transparent;
+  border-width: 0;
+}
+
+.trash-img {
+  width: 75%;
+  height: auto;
+  margin: auto 0;
+}
+
 .votes-row {
   display: flex;
   flex-flow: row nowrap;

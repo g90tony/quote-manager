@@ -17,6 +17,10 @@ export class QuoteGridComponent implements OnInit {
     this.quotes[index].downVotes += 1;
   }
 
+  deleteQuote(index: number) {
+    this.quotes.splice(index, 1);
+  }
+
   quotes: Quote[] = [
     {
       id: 1,
