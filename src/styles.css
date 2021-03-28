@@ -9,6 +9,10 @@ body {
 .primary-text {
   color: #e31e27;
 }
+
+.primary-text {
+  color: #f7f7f7;
+}
 .primary-button {
   background-color: #e31e27;
   border-radius: 10px;
