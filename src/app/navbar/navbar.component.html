@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg primary-background">
   <a class="navbar-brand nav-texts" href="#">Quote Manger</a>
   <button
     class="navbar-toggler"
@@ -15,12 +15,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav nav-links-container">
       <li class="nav-item">
-        <a class="nav-link nav-texts" href="#"
-          >Home <span class="sr-only">(current)</span></a
+        <button
+          class="nav-link nav-texts btn"
+          data-toggle="modal"
+          data-target="#newQuote"
         >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-texts" href="#">New Quote</a>
+          New Quote
+        </button>
+        <div
+          class="modal fade overlay"
+          id="newQuote"
+          tabindex="-1"
+          aria-labelledby="newQuote"
+          aria-hidden="true"
+        >
+          <app-quote-form></app-quote-form>
+        </div>
       </li>
     </ul>
   </div>

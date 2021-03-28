@@ -1,5 +1,8 @@
-nav {
+.primary-background {
   background-color: #e31e27;
+}
+.overlay {
+  background-color: #00000093;
 }
 
 .nav-texts {
@@ -20,7 +23,6 @@ nav {
 
 .nav-item:hover {
   background-color: #1f0203;
-
   transition-duration: 1.3s;
   border-radius: 10px;
 }
