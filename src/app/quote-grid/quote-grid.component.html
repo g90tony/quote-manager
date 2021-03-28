@@ -12,7 +12,7 @@
       </div>
       <p class="card-text quote-description">{{ quote.description }}</p>
       <div class="date-row">
-        <p class="date-text">{{ quote.createdON }}</p>
+        <p class="date-text">{{ quote.createdON | date: "fullDate" }}</p>
       </div>
       <div class="votes-row">
         <button

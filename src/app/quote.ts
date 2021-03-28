@@ -3,7 +3,7 @@ export class Quote {
     public id: number,
     public title: string,
     public description: string,
-    public createdON: string,
+    public createdON: number,
     public upVotes: number,
     public downVotes: number
   ) {
