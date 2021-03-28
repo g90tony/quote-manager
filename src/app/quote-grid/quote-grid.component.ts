@@ -7,20 +7,6 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-grid.component.css'],
 })
 export class QuoteGridComponent implements OnInit {
-  constructor() {}
-
-  addUpVote(index: number) {
-    this.quotes[index].upVotes += 1;
-  }
-
-  addDownVote(index: number) {
-    this.quotes[index].downVotes += 1;
-  }
-
-  deleteQuote(index: number) {
-    this.quotes.splice(index, 1);
-  }
-
   quotes: Quote[] = [
     {
       id: 1,
@@ -59,6 +45,28 @@ export class QuoteGridComponent implements OnInit {
       createdON: 'Sunday, 28 March 2021',
     },
   ];
+
+  constructor() {}
+
+  addUpVote(index: number) {
+    this.quotes[index].upVotes += 1;
+  }
+
+  addDownVote(index: number) {
+    this.quotes[index].downVotes += 1;
+  }
+
+  deleteQuote(index: number) {
+    this.quotes.splice(index, 1);
+  }
+
+  addNewQuote(quote: Quote) {
+    let quoteLen = this.quotes.length;
+
+    quote.id = quoteLen++;
+    // quote.createdON = new Date.now();
+    this.quotes.push(quote);
+  }
 
   ngOnInit(): void {}
 }

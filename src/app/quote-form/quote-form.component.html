@@ -2,7 +2,7 @@
   <div class="modal-content modal-background">
     <div class="modal-header">
       <h5 class="modal-title primary-text" id="exampleModalLabel">
-        Modal title
+        Add a New Quote
       </h5>
       <button
         type="button"
@@ -14,35 +14,51 @@
       </button>
     </div>
     <div class="modal-body">
-      <form>
+      <form #quoteForm="ngForm" (ngSubmit)="submitQuote()">
         <div class="form-group">
-          <label for="quoteName" class="primary-text form-lable"
-            >Quote Name</label
+          <label for="quoteTitle" class="primary-text form-lable"
+            >Quote Title</label
           >
           <input
+            [(ngModel)]="newQuote.title"
+            #title="ngModel"
             type="text"
-            name="quoteName"
-            id="quoteName"
+            name="quoteTitle"
+            id="quoteTitle"
             class="form-control form-control-sm form-input"
             placeholder="Enter the name of the quote"
             aria-describedby="helpId"
+            required
           />
-          <small id="helpId" class="text-muted">Help text</small>
+          <div
+            [hidden]="title.valid || title.pristine"
+            class="alert alert-danger"
+          >
+            <small id="helpId" class="text-muted">Help text</small>
+          </div>
         </div>
         <div class="form-group">
-          <label for="quoteName" class="primary-text form-lable"
+          <label for="quoteDescription" class="primary-text form-lable"
             >Quote Description</label
           >
           <textarea
+            [(ngModel)]="newQuote.description"
+            #description="ngModel"
             type="text"
-            name="quoteName"
-            id="quoteName"
+            name="quoteDescription"
+            id="quoteDescription"
             rows="6"
             class="form-control form-control-sm form-input"
             placeholder="Enter the name of the quote"
             aria-describedby="helpId"
+            required
           ></textarea>
-          <small id="helpId" class="text-muted">Help text</small>
+          <div
+            [hidden]="description.valid || description.pristine"
+            class="alert alert-danger"
+          >
+            <small id="helpId" class="text-muted">Help text</small>
+          </div>
         </div>
         <button
           type="button"
@@ -51,9 +67,15 @@
         >
           Close
         </button>
-        <button type="button" class="btn mx-2 primary-button">
+        <button
+          type="submit"
+          id="quoteFormSubmit"
+          class="btn mx-2 primary-button"
+        >
           Save changes
         </button>
+
+        <button data-dismiss="modal" hidden id="dismissModal"></button>
       </form>
     </div>
   </div>

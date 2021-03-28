@@ -29,4 +29,21 @@
       </div>
     </div>
   </div>
+
+  <button
+    class="nav-link primary-button btn new-quote-button"
+    data-toggle="modal"
+    data-target="#newQuote"
+  >
+    +
+  </button>
+  <div
+    class="modal fade overlay"
+    id="newQuote"
+    tabindex="-1"
+    aria-labelledby="newQuote"
+    aria-hidden="true"
+  >
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
 </div>
