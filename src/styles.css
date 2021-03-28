@@ -9,3 +9,31 @@ body {
 .primary-text {
   color: #e31e27;
 }
+.primary-button {
+  background-color: #e31e27;
+  border-radius: 10px;
+  color: #f7f7f7;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.primary-button:hover {
+  background-color: #f7f7f7;
+  color: #e31e27;
+  transition-duration: 1.3s;
+}
+
+.secondary-button {
+  background-color: #000;
+  border: #e31e27 solid 1px;
+  border-radius: 10px;
+  color: #e31e27;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.secondary-button:hover {
+  background-color: #e31e27;
+  color: #000;
+  transition-duration: 1.3s;
+}
