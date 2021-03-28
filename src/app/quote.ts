@@ -1,8 +1,17 @@
 export class Quote {
-  id!: number;
-  title!: string;
-  description!: string;
-  createdON!: string;
-  upVotes!: number;
-  downVotes!: number;
+  constructor(
+    public id: number,
+    public title: string,
+    public description: string,
+    public createdON: string,
+    public upVotes: number,
+    public downVotes: number
+  ) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.createdON = createdON;
+    this.upVotes = upVotes;
+    this.downVotes = downVotes;
+  }
 }
