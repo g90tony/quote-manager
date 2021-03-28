@@ -2,12 +2,13 @@
   background-color: #e31e27;
 }
 .overlay {
-  background-color: #00000093;
+  background-color: #e31e2878;
 }
 
 .nav-texts {
   text-decoration: none;
   color: #f7f7f7;
+  font-weight: 700;
 }
 .nav-texts:hover {
   text-decoration: none;
