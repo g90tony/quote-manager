@@ -12,7 +12,12 @@
       </div>
       <p class="card-text quote-description">{{ quote.description }}</p>
       <div class="date-row">
-        <p class="date-text">{{ quote.createdON | date: "fullDate" }}</p>
+        <p class="date-text mb-0 pb-0">
+          {{ quote.createdON | date: "fullDate" }}
+        </p>
+      </div>
+      <div class="date-row">
+        <p class="date-text text-light mt-0 pt-0">{{ quote.author }}</p>
       </div>
       <div class="votes-row">
         <button

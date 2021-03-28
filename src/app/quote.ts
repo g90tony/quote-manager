@@ -1,6 +1,7 @@
 export class Quote {
   constructor(
     public id: number,
+    public author: string,
     public title: string,
     public description: string,
     public createdON: number,
@@ -8,6 +9,7 @@ export class Quote {
     public downVotes: number
   ) {
     this.id = id;
+    this.author = author;
     this.title = title;
     this.description = description;
     this.createdON = createdON;

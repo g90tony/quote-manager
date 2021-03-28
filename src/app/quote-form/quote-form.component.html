@@ -17,6 +17,28 @@
       <form #quoteForm="ngForm" (ngSubmit)="submitQuote()">
         <div class="form-group">
           <label for="quoteTitle" class="primary-text form-lable"
+            >Author Name</label
+          >
+          <input
+            [(ngModel)]="newQuote.author"
+            #title="ngModel"
+            type="text"
+            name="quoteAuthor"
+            id="quoteAuthor"
+            class="form-control form-control-sm form-input"
+            placeholder="Enter your first and last names."
+            aria-describedby="helpId"
+            required
+          />
+          <div
+            [hidden]="title.valid || title.pristine"
+            class="alert alert-danger"
+          >
+            <small id="helpId" class="text-muted">Help text</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="quoteTitle" class="primary-text form-lable"
             >Quote Title</label
           >
           <input
@@ -49,7 +71,7 @@
             id="quoteDescription"
             rows="6"
             class="form-control form-control-sm form-input"
-            placeholder="Enter the name of the quote"
+            placeholder="Enter a description of the quote"
             aria-describedby="helpId"
             required
           ></textarea>

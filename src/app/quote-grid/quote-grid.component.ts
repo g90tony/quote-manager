@@ -16,6 +16,7 @@ export class QuoteGridComponent implements OnInit {
       upVotes: 10,
       downVotes: 4,
       createdON: 1616959495955,
+      author: 'Caleb Mbugua',
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ export class QuoteGridComponent implements OnInit {
       upVotes: 20,
       downVotes: 34,
       createdON: 1616859495655,
+      author: 'Caleb Mbugua',
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ export class QuoteGridComponent implements OnInit {
       upVotes: 200,
       downVotes: 14,
       createdON: 1616759496955,
+      author: 'Caleb Mbugua',
     },
     {
       id: 3,
@@ -43,6 +46,7 @@ export class QuoteGridComponent implements OnInit {
       upVotes: 530,
       downVotes: 140,
       createdON: 1615659395955,
+      author: 'Caleb Mbugua',
     },
   ];
 
@@ -65,6 +69,7 @@ export class QuoteGridComponent implements OnInit {
 
     quote.id = quoteLen++;
     // quote.createdON = new Date.now();
+    author: 'Caleb Mbugua';
     this.quotes.push(quote);
   }
 
