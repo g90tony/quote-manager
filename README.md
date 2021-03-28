@@ -17,7 +17,7 @@ Form validation does not work.
 
 ## Technologies Used
 
-This is build on HTML, CSS, JavaScript TypeScript and JQuery
+This is build on HTML, CSS, JavaScript, TypeScript and JQuery
 
 ## Support and contact details
 
